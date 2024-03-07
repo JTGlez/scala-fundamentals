@@ -1,5 +1,4 @@
 # Scala configuration files
-*.conf
 *.properties
 *.xml
 *.yml
@@ -8,5 +7,5 @@
 .bsp
 .bloop
 .vscode
-.project
-.target
+project/
+target/
