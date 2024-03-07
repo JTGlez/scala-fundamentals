@@ -1,0 +1,5 @@
+.metals/
+.bloop/
+.bsp/
+.vscode/
+.metals/metals.log
