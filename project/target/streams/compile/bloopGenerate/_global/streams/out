@@ -1,0 +1,4 @@
+[debug] [scala-fundamentals-build] Classpath dependencies List()
+[debug] [scala-fundamentals-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scala-fundamentals-build' to '/home/yorch/dev/scala-fundamentals/project/.bloop/scala-fundamentals-build.json'
+[success] Generated .bloop/scala-fundamentals-build.json

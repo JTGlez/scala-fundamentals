@@ -1,0 +1,1497 @@
+2024.03.07 12:12:27 INFO  Started: Metals version 1.2.2 in folders '/home/yorch/dev/scala-fundamentals/scala-fundamentals' for client Visual Studio Code 1.87.0.[0m
+12:12:27.787 [pool-1-thread-2] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+12:12:27.788 [pool-1-thread-2] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+12:12:27.788 [pool-1-thread-2] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+12:12:27.790 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+12:12:27.790 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:12:27.790 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+12:12:27.790 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+12:12:27.790 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:12:27.790 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/yorch/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+12:12:27.792 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+12:12:27.792 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+12:12:27.792 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+12:12:27.792 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+12:12:27.792 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+12:12:27.792 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+12:12:27.796 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:12:27.796 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+12:12:27.796 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+12:12:27.796 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+12:12:27.796 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+12:12:27.852 [pool-1-thread-2] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/yorch/dev/scala-fundamentals/scala-fundamentals/.metals/metals (H2 2.2)
+12:12:27.852 [pool-1-thread-2] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+12:12:27.852 [pool-1-thread-2] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+12:12:27.853 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+12:12:27.853 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+12:12:27.856 [pool-1-thread-2] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+12:12:27.857 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+12:12:27.857 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:12:27.863 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+12:12:27.866 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:12:27.871 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:12:27.871 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:12:27.871 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:12:27.871 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:12:27.871 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:12:27.872 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:12:27.872 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:12:27.872 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:12:27.872 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:12:27.872 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:12:27.874 [pool-1-thread-2] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+12:12:27.877 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.012s)
+12:12:27.879 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+12:12:27.887 [pool-1-thread-2] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+12:12:27.889 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+12:12:27.894 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+12:12:27.895 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+12:12:27.895 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+12:12:27.897 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.898 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+12:12:27.899 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.899 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+12:12:27.904 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+12:12:27.904 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+12:12:27.905 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+12:12:27.906 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+12:12:27.906 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+12:12:27.907 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+12:12:27.907 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+12:12:27.908 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+12:12:27.908 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+12:12:27.909 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+12:12:27.910 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.910 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+12:12:27.910 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.911 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+12:12:27.911 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.911 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+12:12:27.912 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.912 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+12:12:27.913 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.913 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+12:12:27.914 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:12:27.918 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+12:12:27.919 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+12:12:27.920 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+12:12:27.920 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+12:12:27.920 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+12:12:27.922 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.922 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+12:12:27.923 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:12:27.926 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+12:12:27.927 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+12:12:27.928 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+12:12:27.929 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+12:12:27.929 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+12:12:27.930 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+12:12:27.930 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+12:12:27.933 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.933 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+12:12:27.937 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.937 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+12:12:27.938 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.939 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+12:12:27.941 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:12:27.942 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+12:12:27.944 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+12:12:27.944 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+12:12:27.944 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+12:12:27.944 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+12:12:27.946 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:12:27.946 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+12:12:27.947 [pool-1-thread-2] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:12:27.952 [pool-1-thread-2] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.018s)
+12:12:27.962 [pool-1-thread-2] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 69 of 120M
+2024.03.07 12:12:28 WARN  Build server is not auto-connectable.[0m
+2024.03.07 12:12:48 WARN  No build session currently active to reload.[0m
+2024.03.07 12:12:50 INFO  Shutting down server[0m
+2024.03.07 12:12:50 INFO  shutting down Metals[0m
+2024.03.07 12:12:50 INFO  Exiting server[0m
+2024.03.07 12:13:36 INFO  Started: Metals version 1.2.2 in folders '/home/yorch/dev/scala-fundamentals' for client Visual Studio Code 1.87.0.[0m
+12:13:36.909 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+12:13:36.910 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+12:13:36.911 [pool-1-thread-4] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+12:13:36.912 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+12:13:36.913 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:13:36.913 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+12:13:36.913 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+12:13:36.913 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:13:36.913 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/yorch/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+12:13:36.915 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+12:13:36.915 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+12:13:36.915 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+12:13:36.915 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+12:13:36.916 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+12:13:36.916 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+12:13:36.918 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:13:36.918 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+12:13:36.918 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+12:13:36.918 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+12:13:36.918 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+12:13:36.974 [pool-1-thread-4] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/yorch/dev/scala-fundamentals/.metals/metals (H2 2.2)
+12:13:36.974 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+12:13:36.974 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+12:13:36.975 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+12:13:36.975 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+12:13:36.979 [pool-1-thread-4] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+12:13:36.980 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+12:13:36.980 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:13:36.986 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+12:13:36.989 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:13:36.994 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:13:36.994 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:13:36.994 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:13:36.994 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:13:36.994 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:13:36.995 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:13:36.995 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:13:36.995 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:13:36.995 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:13:36.995 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:13:36.996 [pool-1-thread-4] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+12:13:36.999 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.012s)
+12:13:37.000 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+12:13:37.002 [pool-1-thread-4] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+12:13:37.003 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing  ...
+12:13:37.010 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+12:13:37.010 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+12:13:37.010 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+12:13:37.013 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.013 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+12:13:37.014 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.014 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Created Schema History table "PUBLIC"."flyway_schema_history"
+12:13:37.018 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+12:13:37.018 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V1__Create_tables.sql ...
+12:13:37.019 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+12:13:37.020 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 12: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+12:13:37.020 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 19: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+12:13:37.021 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 27: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+12:13:37.021 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 34: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+12:13:37.022 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "1 - Create tables" ...
+12:13:37.023 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - Create tables"
+12:13:37.023 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and build targets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table dependency_source(
+  text_document_uri varchar primary key,
+  build_target_uri varchar not null
+)
+12:13:37.024 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.024 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between library dependency sources under .metals/readonly/**
+-- and worksheets they belong to. Required to know what classpath to use
+-- for compiling dependency sources.
+create table worksheet_dependency_source(
+  text_document_uri varchar primary key,
+  worksheet_uri varchar not null
+)
+12:13:37.025 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.025 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The relationship between what library dependency sources under .metals/readonly/**
+-- map to which build targets.
+create table sbt_digest(
+  md5 varchar,
+  status tinyint not null,
+  when_recorded timestamp
+)
+12:13:37.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Which window/showMessage and window/showMessageRequest dialogues have been dismissed
+-- by the user via "Don't show again" or closed by clicking on "x".
+create table dismissed_notification(
+  id int,
+  when_dismissed timestamp,
+  when_expires timestamp
+)
+12:13:37.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.026 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- The choice of build tool when multiple build tool files are found in a workspace
+create table chosen_build_tool(
+  build_tool varchar primary key
+)
+12:13:37.027 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.027 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "1 - Create tables"
+12:13:37.028 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:13:37.031 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V2__Server_discovery.sql ...
+12:13:37.032 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 4: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+12:13:37.032 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "2 - Server discovery" ...
+12:13:37.033 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - Server discovery"
+12:13:37.033 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- For each unique combination of installed build servers we select one server.
+-- The md5 checksum is computed from the names of the installed build servers, and
+-- the selected server is the server which the user chose for this workspace.
+create table chosen_build_server(
+  md5 varchar primary key,
+  selected_server varchar,
+  when_recorded timestamp
+)
+12:13:37.033 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.034 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "2 - Server discovery"
+12:13:37.034 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:13:37.035 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V3__Jar_symbols.sql ...
+12:13:37.036 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+12:13:37.036 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 7: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+12:13:37.037 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 15: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+12:13:37.037 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "3 - Jar symbols" ...
+12:13:37.038 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - Jar symbols"
+12:13:37.038 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Indexed jars, the MD5 digest of path, modified time and size as key
+create table indexed_jar(
+  id int auto_increment unique,
+  md5 varchar primary key
+)
+12:13:37.040 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.040 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Top Level Symbols per jar, allow for multiple jars with same symbols and paths
+create table toplevel_symbol(
+  symbol varchar not null,
+  path varchar not null,
+  jar int,
+  foreign key (jar) references indexed_jar (id) on delete cascade,
+  primary key (jar, path, symbol)
+)
+12:13:37.043 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.043 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Create index to speedup lookup of jar symbols
+create index toplevel_symbol_jar on toplevel_symbol(jar)
+12:13:37.044 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.044 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "3 - Jar symbols"
+12:13:37.045 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:13:37.046 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.parser.Parser -- Parsing V4__Fingerprints.sql ...
+12:13:37.047 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.ParserSqlScript -- Found statement at line 2: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+12:13:37.047 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Starting migration of schema "PUBLIC" to version "4 - Fingerprints" ...
+12:13:37.048 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "4 - Fingerprints"
+12:13:37.048 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- Executing SQL: -- Fingerprints saved between invocations
+create table fingerprints(
+  path varchar not null,
+  text varchar not null,
+  md5 varchar not null,
+  id int auto_increment unique
+)
+12:13:37.048 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.sqlscript.DefaultSqlScriptExecutor -- 0 rows affected
+12:13:37.048 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.command.DbMigrate -- Successfully completed migration of schema "PUBLIC" to version "4 - Fingerprints"
+12:13:37.049 [pool-1-thread-4] DEBUG org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+12:13:37.053 [pool-1-thread-4] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.012s)
+12:13:37.062 [pool-1-thread-4] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 24 of 100M
+2024.03.07 12:13:37 WARN  Build server is not auto-connectable.[0m
+2024.03.07 12:13:39 INFO  running '/home/yorch/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.03.07 12:13:39 ERROR [info] [launcher] getting org.scala-sbt sbt 1.9.8  (this may take some time)...[0m
+2024.03.07 12:13:39 WARN  no build target for: /home/yorch/dev/scala-fundamentals/project/metals.sbt[0m
+2024.03.07 12:13:39 WARN  no build target for: /home/yorch/dev/scala-fundamentals/project/project/metals.sbt[0m
+2024.03.07 12:13:39 INFO  skipping build import with status 'Started'[0m
+2024.03.07 12:13:43 INFO  no build target found for /home/yorch/dev/scala-fundamentals/project/metals.sbt. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2024.03.07 12:13:44 INFO  [info] welcome to sbt 1.9.8 (Private Build Java 1.8.0_392)[0m
+2024.03.07 12:13:45 INFO  [info] loading settings for project scala-fundamentals-build-build from metals.sbt ...[0m
+2024.03.07 12:13:45 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project/project[0m
+2024.03.07 12:13:47 INFO  [info] loading settings for project scala-fundamentals-build from metals.sbt ...[0m
+2024.03.07 12:13:47 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project[0m
+2024.03.07 12:13:49 INFO  [success] Generated .bloop/scala-fundamentals-build.json[0m
+2024.03.07 12:13:49 INFO  [success] Total time: 2 s, completed Mar 7, 2024 12:13:49 PM[0m
+2024.03.07 12:13:49 INFO  [info] loading settings for project scala-fundamentals from build.sbt ...[0m
+2024.03.07 12:13:49 INFO  [info] set current project to hello-world (in build file:/home/yorch/dev/scala-fundamentals/)[0m
+2024.03.07 12:13:50 INFO  [success] Generated .bloop/scala-fundamentals.json[0m
+2024.03.07 12:13:50 INFO  [success] Generated .bloop/scala-fundamentals-test.json[0m
+2024.03.07 12:13:50 INFO  [success] Total time: 0 s, completed Mar 7, 2024 12:13:50 PM[0m
+2024.03.07 12:13:51 INFO  time: ran 'sbt bloopInstall' in 11s[0m
+2024.03.07 12:13:51 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:13:51 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:13:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:13:55 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:13:55 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:13:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:13:55 INFO  time: Connected to build server in 3.99s[0m
+2024.03.07 12:13:55 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:14:00 INFO  time: indexed workspace in 5.18s[0m
+2024.03.07 12:14:05 INFO  time: code lens generation in 5.27s[0m
+Mar 07, 2024 12:14:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Mar 07, 2024 12:14:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+2024.03.07 12:14:05 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:14:08 INFO  time: compiled scala-fundamentals in 2.72s[0m
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.pom
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.pom
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-sysops_2.13/3.7.15/scalafmt-sysops_2.13-3.7.15.jar
+Downloading https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.8.12/parsers_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.8.12/scalameta_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-config_2.13/3.7.15/scalafmt-config_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/scalafmt-core_2.13/3.7.15/scalafmt-core_2.13-3.7.15.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/common_2.13/4.8.12/common_2.13-4.8.12.jar
+Downloaded https://repo1.maven.org/maven2/org/scalameta/trees_2.13/4.8.12/trees_2.13-4.8.12.jar
+2024.03.07 12:14:32 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:14:32 INFO  time: compiled scala-fundamentals in 0.49s[0m
+2024.03.07 12:15:07 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:17:56 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+Mar 07, 2024 12:18:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+2024.03.07 12:18:21 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+Mar 07, 2024 12:18:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 07, 2024 12:18:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 07, 2024 12:18:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 80
+Mar 07, 2024 12:18:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 83
+2024.03.07 12:18:22 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+Mar 07, 2024 12:18:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 85
+2024.03.07 12:18:25 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:25 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+Mar 07, 2024 12:18:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 108
+2024.03.07 12:18:26 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+Mar 07, 2024 12:18:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 118
+2024.03.07 12:18:27 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:29 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:29 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:31 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:32 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+Mar 07, 2024 12:18:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 169
+2024.03.07 12:18:39 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:39 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:41 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:44 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:46 WARN  Running javac-semanticdb failed for file:///home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java. Output:
+[0m
+2024.03.07 12:18:46 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java[0m
+2024.03.07 12:18:51 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java[0m
+Mar 07, 2024 12:19:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/yorch/dev/scala-fundamentals/.metals/.reports/metals-full/2024-03-07/r_compiler-error_12-19-43-290.md
+Mar 07, 2024 12:19:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/yorch/dev/scala-fundamentals/.metals/.reports/metals-full/2024-03-07/r_compiler-error_12-19-50-825.md
+Mar 07, 2024 12:19:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/yorch/dev/scala-fundamentals/.metals/.reports/metals-full/2024-03-07/r_compiler-error_12-19-51-441.md
+2024.03.07 12:20:09 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground2.scala[0m
+Mar 07, 2024 12:20:29 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/yorch/dev/scala-fundamentals/.metals/.reports/metals-full/2024-03-07/r_compiler-error_12-20-29-553.md
+Mar 07, 2024 12:20:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/yorch/dev/scala-fundamentals/.metals/.reports/metals-full/2024-03-07/r_compiler-error_12-20-30-013.md
+2024.03.07 12:21:23 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:21:24 INFO  Shutting down server[0m
+2024.03.07 12:21:24 INFO  shutting down Metals[0m
+2024.03.07 12:21:23 INFO  Shut down connection with build server.[0m
+2024.03.07 12:21:24 INFO  Shut down connection with build server.[0m
+2024.03.07 12:21:24 INFO  Exiting server[0m
+2024.03.07 12:21:39 INFO  Started: Metals version 1.2.2 in folders '/home/yorch/dev/scala-fundamentals' for client Visual Studio Code 1.87.0.[0m
+12:21:40.069 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+12:21:40.071 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+12:21:40.071 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+12:21:40.073 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+12:21:40.073 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:21:40.073 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+12:21:40.073 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+12:21:40.073 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:21:40.073 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/yorch/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+12:21:40.074 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+12:21:40.075 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+12:21:40.075 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+12:21:40.075 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+12:21:40.075 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+12:21:40.075 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+12:21:40.077 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:21:40.078 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+12:21:40.078 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+12:21:40.079 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+12:21:40.079 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+12:21:40.141 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/yorch/dev/scala-fundamentals/.metals/metals (H2 2.2)
+12:21:40.142 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+12:21:40.142 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+12:21:40.143 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+12:21:40.143 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+12:21:40.145 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+12:21:40.146 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+12:21:40.147 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:21:40.153 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+12:21:40.157 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:21:40.163 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:21:40.164 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:21:40.171 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.016s)
+12:21:40.173 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+12:21:40.177 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+12:21:40.179 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+12:21:40.187 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 28 of 100M
+2024.03.07 12:21:40 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:21:40 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:21:40 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:21:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:21:42 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:21:42 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:21:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:21:42 INFO  time: Connected to build server in 2.77s[0m
+2024.03.07 12:21:42 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:21:44 INFO  no build target found for /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2024.03.07 12:21:46 INFO  time: indexed workspace in 1.69s[0m
+2024.03.07 12:21:46 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:21:49 INFO  time: code lens generation in 3.03s[0m
+2024.03.07 12:21:49 INFO  time: code lens generation in 3.39s[0m
+Mar 07, 2024 12:21:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+2024.03.07 12:22:35 INFO  Shutting down server[0m
+2024.03.07 12:22:35 INFO  shutting down Metals[0m
+2024.03.07 12:22:35 INFO  Shut down connection with build server.[0m
+2024.03.07 12:22:35 INFO  Shut down connection with build server.[0m
+2024.03.07 12:22:35 INFO  Exiting server[0m
+2024.03.07 12:22:46 INFO  Started: Metals version 1.2.2 in folders '/home/yorch/dev/scala-fundamentals' for client Visual Studio Code 1.87.0.[0m
+12:22:47.485 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+12:22:47.488 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+12:22:47.488 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+12:22:47.490 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+12:22:47.491 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:22:47.491 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+12:22:47.491 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+12:22:47.491 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@277050dc ...
+12:22:47.491 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/home/yorch/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+12:22:47.493 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+12:22:47.493 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+12:22:47.493 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+12:22:47.493 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+12:22:47.493 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+12:22:47.493 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+12:22:47.495 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:22:47.496 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+12:22:47.496 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+12:22:47.497 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+12:22:47.497 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+12:22:47.555 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/home/yorch/dev/scala-fundamentals/.metals/metals (H2 2.2)
+12:22:47.556 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+12:22:47.556 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+12:22:47.556 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+12:22:47.556 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+12:22:47.559 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+12:22:47.560 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+12:22:47.560 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:22:47.565 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+12:22:47.567 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:22:47.575 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:22:47.575 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:22:47.575 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:22:47.575 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:22:47.575 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:22:47.576 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+12:22:47.576 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+12:22:47.576 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+12:22:47.576 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+12:22:47.576 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+12:22:47.583 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.017s)
+12:22:47.585 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+12:22:47.589 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+12:22:47.591 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+12:22:47.599 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 34 of 100M
+2024.03.07 12:22:47 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:22:47 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:22:47 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+Mar 07, 2024 12:22:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+Mar 07, 2024 12:22:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+2024.03.07 12:22:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:22:50 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:22:50 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:22:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:22:50 INFO  time: Connected to build server in 2.68s[0m
+2024.03.07 12:22:50 INFO  Connected to Build server: Bloop v1.5.15[0m
+Mar 07, 2024 12:22:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14
+2024.03.07 12:22:50 INFO  time: Imported build in 0.12s[0m
+Mar 07, 2024 12:22:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+2024.03.07 12:22:52 INFO  no build target found for /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+2024.03.07 12:22:54 INFO  time: indexed workspace in 1.78s[0m
+2024.03.07 12:22:54 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:22:55 INFO  no build target found for /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala. Using presentation compiler with project's scala-library version: 2.13.12[0m
+2024.03.07 12:22:56 INFO  time: code lens generation in 2.04s[0m
+2024.03.07 12:22:56 INFO  time: code lens generation in 2.04s[0m
+2024.03.07 12:22:56 INFO  time: code lens generation in 2.04s[0m
+2024.03.07 12:22:56 INFO  time: code lens generation in 1.48s[0m
+2024.03.07 12:22:56 INFO  time: code lens generation in 2.04s[0m
+2024.03.07 12:22:56 INFO  time: code lens generation in 2.04s[0m
+Mar 07, 2024 12:23:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 63
+2024.03.07 12:23:17 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:23:27 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:23:47 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:23:59 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:24:08 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:24:10 INFO  time: compiled scala-fundamentals in 2.04s[0m
+2024.03.07 12:24:12 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:24:12 INFO  time: compiled scala-fundamentals in 0.39s[0m
+Mar 07, 2024 12:24:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 176
+2024.03.07 12:24:23 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:01 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:34 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:37 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:40 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:25:40 INFO  Shut down connection with build server.[0m
+2024.03.07 12:25:40 INFO  Shut down connection with build server.[0m
+2024.03.07 12:25:40 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:25:40 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:25:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:25:40 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:25:40 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:25:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:25:40 INFO  time: Connected to build server in 52ms[0m
+2024.03.07 12:25:40 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:25:42 INFO  time: indexed workspace in 1.07s[0m
+2024.03.07 12:25:42 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:44 INFO  time: code lens generation in 1.96s[0m
+2024.03.07 12:25:46 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:47 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:47 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:47 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:25:48 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:25:48 INFO  time: compiled scala-fundamentals in 0.35s[0m
+2024.03.07 12:25:48 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:25:48 INFO  time: compiled scala-fundamentals in 0.13s[0m
+2024.03.07 12:25:58 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:25:58 INFO  Shut down connection with build server.[0m
+2024.03.07 12:25:58 INFO  Shut down connection with build server.[0m
+2024.03.07 12:25:58 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:25:58 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:25:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:25:59 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:25:59 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:25:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:25:59 INFO  time: Connected to build server in 1.51s[0m
+2024.03.07 12:25:59 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:26:01 INFO  time: indexed workspace in 1.05s[0m
+2024.03.07 12:26:01 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:26:01 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:26:01 INFO  Cancelling compilation on Bloop server[0m
+2024.03.07 12:26:01 INFO  Shut down connection with build server.[0m
+2024.03.07 12:26:03 INFO  Shut down connection with build server.[0m
+2024.03.07 12:26:03 INFO  Deleted directories inside .bloop[0m
+2024.03.07 12:26:03 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:26:03 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:26:03 INFO  time: code lens generation in 1.36s[0m
+2024.03.07 12:26:03 INFO  time: code lens generation in 1.97s[0m
+2024.03.07 12:26:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:26:04 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:26:04 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:26:04 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:26:04 INFO  time: Connected to build server in 1.28s[0m
+2024.03.07 12:26:04 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:26:05 INFO  time: indexed workspace in 0.99s[0m
+2024.03.07 12:26:05 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:26:06 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:26:08 INFO  time: compiled scala-fundamentals in 2.13s[0m
+2024.03.07 12:26:08 INFO  time: code lens generation in 2.02s[0m
+2024.03.07 12:26:18 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:26:33 INFO  time: code lens generation in 1.48s[0m
+2024.03.07 12:28:44 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:28:48 INFO  compiling scala-fundamentals (1 scala source)[0m
+2024.03.07 12:28:48 INFO  time: compiled scala-fundamentals in 0.64s[0m
+2024.03.07 12:31:04 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:31:06 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:32:51 INFO  running '/home/yorch/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.03.07 12:32:52 INFO  [info] welcome to sbt 1.9.8 (Private Build Java 1.8.0_392)[0m
+2024.03.07 12:32:52 INFO  [info] loading settings for project scala-fundamentals-build-build from metals.sbt ...[0m
+2024.03.07 12:32:53 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project/project[0m
+2024.03.07 12:32:53 INFO  [info] loading settings for project scala-fundamentals-build from metals.sbt ...[0m
+2024.03.07 12:32:53 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project[0m
+2024.03.07 12:32:55 INFO  [success] Generated .bloop/scala-fundamentals-build.json[0m
+2024.03.07 12:32:55 INFO  [success] Total time: 1 s, completed Mar 7, 2024 12:32:55 PM[0m
+2024.03.07 12:32:56 ERROR /home/yorch/dev/scala-fundamentals/build.sbt:68: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+2024.03.07 12:32:56 ERROR     sourceDirectories in Compile += baseDirectory.value / "src/playground"[0m
+2024.03.07 12:32:56 ERROR                       ^[0m
+2024.03.07 12:32:57 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.03.07 12:32:57 INFO  [info] set current project to hello-world (in build file:/home/yorch/dev/scala-fundamentals/)[0m
+2024.03.07 12:32:57 INFO  [warn] there's a key that's not used by any other settings/tasks:[0m
+2024.03.07 12:32:57 INFO  [warn]  [0m
+2024.03.07 12:32:57 INFO  [warn] * root / Compile / sourceDirectories[0m
+2024.03.07 12:32:57 INFO  [warn]   +- (sbt.Defaults.sourceConfigPaths) Defaults.scala:613[0m
+2024.03.07 12:32:57 INFO  [warn]   +- /home/yorch/dev/scala-fundamentals/build.sbt:68[0m
+2024.03.07 12:32:57 INFO  [warn]  [0m
+2024.03.07 12:32:57 INFO  [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check[0m
+2024.03.07 12:32:57 INFO  [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key[0m
+2024.03.07 12:32:57 INFO  [success] Generated .bloop/root-test.json[0m
+2024.03.07 12:32:57 INFO  [success] Generated .bloop/root.json[0m
+2024.03.07 12:32:57 INFO  [warn] Removed stale /home/yorch/dev/scala-fundamentals/.bloop/scala-fundamentals.json[0m
+2024.03.07 12:32:57 INFO  [warn] Removed stale /home/yorch/dev/scala-fundamentals/.bloop/scala-fundamentals-test.json[0m
+2024.03.07 12:32:57 INFO  [success] Total time: 0 s, completed Mar 7, 2024 12:32:58 PM[0m
+2024.03.07 12:32:58 INFO  time: ran 'sbt bloopInstall' in 6.56s[0m
+2024.03.07 12:32:58 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:32:58 INFO  Shut down connection with build server.[0m
+2024.03.07 12:32:58 INFO  Shut down connection with build server.[0m
+2024.03.07 12:32:58 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:32:58 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:32:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:32:58 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:32:58 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:32:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:32:58 INFO  time: Connected to build server in 49ms[0m
+2024.03.07 12:32:58 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:32:59 INFO  time: indexed workspace in 1.07s[0m
+2024.03.07 12:32:59 INFO  compiling root (2 scala sources and 1 java source)[0m
+2024.03.07 12:33:02 INFO  time: compiled root in 2.4s[0m
+2024.03.07 12:33:02 INFO  time: code lens generation in 2.25s[0m
+Mar 07, 2024 12:33:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 392
+2024.03.07 12:33:41 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:33:41 INFO  time: compiled root in 0.34s[0m
+Mar 07, 2024 12:33:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 404
+2024.03.07 12:35:19 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:35:23 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:35:25 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:36:37 INFO  skipping build import with status 'Installed'[0m
+Mar 07, 2024 12:37:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.03.07 12:38:05 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:38:05 INFO  time: compiled root in 0.38s[0m
+2024.03.07 12:38:19 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:38:19 INFO  time: compiled root in 0.34s[0m
+Mar 07, 2024 12:38:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 539
+Mar 07, 2024 12:38:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 557
+Mar 07, 2024 12:39:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 670
+2024.03.07 12:42:29 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:42:29 INFO  time: compiled root in 0.34s[0m
+2024.03.07 12:42:44 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:42:44 INFO  time: compiled root in 0.42s[0m
+2024.03.07 12:42:46 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:42:46 INFO  time: compiled root in 0.3s[0m
+2024.03.07 12:43:00 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:43:00 INFO  time: compiled root in 0.34s[0m
+Mar 07, 2024 12:43:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 970
+Mar 07, 2024 12:43:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 975
+2024.03.07 12:43:27 ERROR Failed to tokenize input for semantic tokens for /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala
+scala.meta.tokenizers.TokenizeException: <input>:6: error: unclosed string literal
+    println()"
+             ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:553)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:372)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 07, 2024 12:43:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1029
+2024.03.07 12:43:31 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:43:31 INFO  time: compiled root in 0.34s[0m
+2024.03.07 12:43:51 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:43:51 INFO  time: compiled root in 34ms[0m
+Mar 07, 2024 12:43:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1114
+2024.03.07 12:44:01 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:44:01 INFO  time: compiled root in 0.4s[0m
+2024.03.07 12:44:08 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:44:08 INFO  time: compiled root in 0.43s[0m
+2024.03.07 12:44:23 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:44:23 INFO  time: compiled root in 0.38s[0m
+2024.03.07 12:44:30 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:44:30 INFO  time: compiled root in 0.38s[0m
+2024.03.07 12:52:17 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/package.scala[0m
+2024.03.07 12:52:56 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:53:04 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+Mar 07, 2024 12:53:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/yorch/dev/scala-fundamentals/.metals/.reports/metals-full/2024-03-07/r_compiler-error_12-53-08-045.md
+2024.03.07 12:53:09 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:53:11 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:53:18 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:53:26 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:53:31 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:53:51 INFO  running '/home/yorch/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.03.07 12:53:52 INFO  [info] welcome to sbt 1.9.8 (Private Build Java 1.8.0_392)[0m
+2024.03.07 12:53:52 INFO  [info] loading settings for project scala-fundamentals-build-build from metals.sbt ...[0m
+2024.03.07 12:53:53 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project/project[0m
+2024.03.07 12:53:53 INFO  [info] loading settings for project scala-fundamentals-build from metals.sbt ...[0m
+2024.03.07 12:53:53 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project[0m
+2024.03.07 12:53:55 INFO  [success] Generated .bloop/scala-fundamentals-build.json[0m
+2024.03.07 12:53:55 INFO  [success] Total time: 1 s, completed Mar 7, 2024 12:53:55 PM[0m
+2024.03.07 12:53:56 ERROR /home/yorch/dev/scala-fundamentals/build.sbt:68: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+2024.03.07 12:53:56 ERROR     sourceDirectories in Compile += baseDirectory.value / "src/playground" / "src/lectures"[0m
+2024.03.07 12:53:56 ERROR                       ^[0m
+2024.03.07 12:53:57 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.03.07 12:53:57 INFO  [info] set current project to hello-world (in build file:/home/yorch/dev/scala-fundamentals/)[0m
+2024.03.07 12:53:57 INFO  [warn] there's a key that's not used by any other settings/tasks:[0m
+2024.03.07 12:53:57 INFO  [warn]  [0m
+2024.03.07 12:53:57 INFO  [warn] * root / Compile / sourceDirectories[0m
+2024.03.07 12:53:57 INFO  [warn]   +- (sbt.Defaults.sourceConfigPaths) Defaults.scala:613[0m
+2024.03.07 12:53:57 INFO  [warn]   +- /home/yorch/dev/scala-fundamentals/build.sbt:68[0m
+2024.03.07 12:53:57 INFO  [warn]  [0m
+2024.03.07 12:53:57 INFO  [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check[0m
+2024.03.07 12:53:57 INFO  [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key[0m
+2024.03.07 12:53:57 INFO  [success] Generated .bloop/root-test.json[0m
+2024.03.07 12:53:57 INFO  [success] Generated .bloop/root.json[0m
+2024.03.07 12:53:57 INFO  [success] Total time: 0 s, completed Mar 7, 2024 12:53:58 PM[0m
+2024.03.07 12:53:58 INFO  time: ran 'sbt bloopInstall' in 6.77s[0m
+2024.03.07 12:53:58 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:53:58 INFO  Shut down connection with build server.[0m
+2024.03.07 12:53:58 INFO  Shut down connection with build server.[0m
+2024.03.07 12:53:58 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:53:58 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:53:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:53:58 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:53:58 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:53:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:53:58 INFO  time: Connected to build server in 40ms[0m
+2024.03.07 12:53:58 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:53:59 INFO  time: indexed workspace in 1.09s[0m
+2024.03.07 12:53:59 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/JavaPlayground.java[0m
+2024.03.07 12:53:59 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:53:59 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:53:59 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:54:02 INFO  time: compiled root in 2.44s[0m
+2024.03.07 12:54:02 INFO  skipping build import with status 'Installed'[0m
+2024.03.07 12:54:02 INFO  time: code lens generation in 1.23s[0m
+2024.03.07 12:54:02 INFO  time: code lens generation in 2.08s[0m
+2024.03.07 12:54:09 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+2024.03.07 12:54:14 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/playground/ScalaPlayground.scala[0m
+Mar 07, 2024 12:54:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1474
+2024.03.07 12:54:21 INFO  running '/home/yorch/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.03.07 12:54:22 INFO  [info] welcome to sbt 1.9.8 (Private Build Java 1.8.0_392)[0m
+2024.03.07 12:54:22 INFO  [info] loading settings for project scala-fundamentals-build-build from metals.sbt ...[0m
+2024.03.07 12:54:23 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project/project[0m
+2024.03.07 12:54:23 INFO  [info] loading settings for project scala-fundamentals-build from metals.sbt ...[0m
+2024.03.07 12:54:23 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project[0m
+2024.03.07 12:54:25 INFO  [success] Generated .bloop/scala-fundamentals-build.json[0m
+2024.03.07 12:54:25 INFO  [success] Total time: 1 s, completed Mar 7, 2024 12:54:25 PM[0m
+2024.03.07 12:54:26 ERROR /home/yorch/dev/scala-fundamentals/build.sbt:68: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+2024.03.07 12:54:26 ERROR     sourceDirectories in Compile += baseDirectory.value / "src/playground"[0m
+2024.03.07 12:54:26 ERROR                       ^[0m
+2024.03.07 12:54:27 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.03.07 12:54:27 INFO  [info] set current project to hello-world (in build file:/home/yorch/dev/scala-fundamentals/)[0m
+2024.03.07 12:54:27 INFO  [warn] there's a key that's not used by any other settings/tasks:[0m
+2024.03.07 12:54:27 INFO  [warn]  [0m
+2024.03.07 12:54:27 INFO  [warn] * root / Compile / sourceDirectories[0m
+2024.03.07 12:54:27 INFO  [warn]   +- (sbt.Defaults.sourceConfigPaths) Defaults.scala:613[0m
+2024.03.07 12:54:27 INFO  [warn]   +- /home/yorch/dev/scala-fundamentals/build.sbt:68[0m
+2024.03.07 12:54:27 INFO  [warn]  [0m
+2024.03.07 12:54:27 INFO  [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check[0m
+2024.03.07 12:54:27 INFO  [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key[0m
+2024.03.07 12:54:27 INFO  [success] Generated .bloop/root.json[0m
+2024.03.07 12:54:27 INFO  [success] Generated .bloop/root-test.json[0m
+2024.03.07 12:54:27 INFO  [success] Total time: 0 s, completed Mar 7, 2024 12:54:27 PM[0m
+2024.03.07 12:54:28 INFO  time: ran 'sbt bloopInstall' in 6.52s[0m
+2024.03.07 12:54:28 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:54:28 INFO  Shut down connection with build server.[0m
+2024.03.07 12:54:28 INFO  Shut down connection with build server.[0m
+2024.03.07 12:54:28 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:54:28 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:54:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:54:28 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:54:28 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:54:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:54:28 INFO  time: Connected to build server in 38ms[0m
+2024.03.07 12:54:28 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:54:29 INFO  time: indexed workspace in 1.03s[0m
+2024.03.07 12:54:29 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:54:29 INFO  compiling root (2 scala sources and 1 java source)[0m
+2024.03.07 12:54:31 INFO  time: compiled root in 2.35s[0m
+Mar 07, 2024 12:55:38 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/yorch/dev/scala-fundamentals/.metals/.reports/metals-full/2024-03-07/r_compiler-error_(scala-fundamentals-build)_12-55-38-236.md
+2024.03.07 12:55:42 INFO  running '/home/yorch/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.03.07 12:55:43 INFO  [info] welcome to sbt 1.9.8 (Private Build Java 1.8.0_392)[0m
+2024.03.07 12:55:43 INFO  [info] loading settings for project scala-fundamentals-build-build from metals.sbt ...[0m
+2024.03.07 12:55:45 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project/project[0m
+2024.03.07 12:55:45 INFO  [info] loading settings for project scala-fundamentals-build from metals.sbt ...[0m
+2024.03.07 12:55:45 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project[0m
+2024.03.07 12:55:46 INFO  [success] Generated .bloop/scala-fundamentals-build.json[0m
+2024.03.07 12:55:46 INFO  [success] Total time: 1 s, completed Mar 7, 2024 12:55:47 PM[0m
+2024.03.07 12:55:48 ERROR /home/yorch/dev/scala-fundamentals/build.sbt:68: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+2024.03.07 12:55:48 ERROR     sourceDirectories in Compile += baseDirectory.value / "src/playground",[0m
+2024.03.07 12:55:48 ERROR                       ^[0m
+2024.03.07 12:55:48 ERROR /home/yorch/dev/scala-fundamentals/build.sbt:69: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+2024.03.07 12:55:48 ERROR     sourceDirectories in Compile += baseDirectory.value / "lectures/part1basics"[0m
+2024.03.07 12:55:48 ERROR                       ^[0m
+2024.03.07 12:55:49 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.03.07 12:55:49 INFO  [info] set current project to hello-world (in build file:/home/yorch/dev/scala-fundamentals/)[0m
+2024.03.07 12:55:49 INFO  [warn] there's a key that's not used by any other settings/tasks:[0m
+2024.03.07 12:55:49 INFO  [warn]  [0m
+2024.03.07 12:55:49 INFO  [warn] * root / Compile / sourceDirectories[0m
+2024.03.07 12:55:49 INFO  [warn]   +- (sbt.Defaults.sourceConfigPaths) Defaults.scala:613[0m
+2024.03.07 12:55:49 INFO  [warn]   +- /home/yorch/dev/scala-fundamentals/build.sbt:68[0m
+2024.03.07 12:55:49 INFO  [warn]   +- /home/yorch/dev/scala-fundamentals/build.sbt:69[0m
+2024.03.07 12:55:49 INFO  [warn]  [0m
+2024.03.07 12:55:49 INFO  [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check[0m
+2024.03.07 12:55:49 INFO  [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key[0m
+2024.03.07 12:55:49 INFO  [success] Generated .bloop/root-test.json[0m
+2024.03.07 12:55:49 INFO  [success] Generated .bloop/root.json[0m
+2024.03.07 12:55:49 INFO  [success] Total time: 0 s, completed Mar 7, 2024 12:55:49 PM[0m
+2024.03.07 12:55:49 INFO  time: ran 'sbt bloopInstall' in 6.86s[0m
+2024.03.07 12:55:49 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:55:49 INFO  Shut down connection with build server.[0m
+2024.03.07 12:55:49 INFO  Shut down connection with build server.[0m
+2024.03.07 12:55:49 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:55:49 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:55:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:55:49 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:55:49 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:55:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:55:49 INFO  time: Connected to build server in 36ms[0m
+2024.03.07 12:55:49 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:55:50 INFO  time: indexed workspace in 1s[0m
+2024.03.07 12:55:50 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:55:53 INFO  time: code lens generation in 1.83s[0m
+2024.03.07 12:55:59 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:56:00 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:56:03 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:56:08 WARN  no build target for: /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala[0m
+2024.03.07 12:56:14 INFO  skipping build import with status 'Installed'[0m
+Mar 07, 2024 12:56:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1663
+2024.03.07 12:56:21 INFO  running '/home/yorch/.local/share/coursier/bin/sbt -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2024.03.07 12:56:22 INFO  [info] welcome to sbt 1.9.8 (Private Build Java 1.8.0_392)[0m
+2024.03.07 12:56:22 INFO  [info] loading settings for project scala-fundamentals-build-build from metals.sbt ...[0m
+2024.03.07 12:56:23 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project/project[0m
+2024.03.07 12:56:23 INFO  [info] loading settings for project scala-fundamentals-build from metals.sbt ...[0m
+2024.03.07 12:56:23 INFO  [info] loading project definition from /home/yorch/dev/scala-fundamentals/project[0m
+2024.03.07 12:56:25 INFO  [success] Generated .bloop/scala-fundamentals-build.json[0m
+2024.03.07 12:56:25 INFO  [success] Total time: 1 s, completed Mar 7, 2024 12:56:25 PM[0m
+2024.03.07 12:56:26 ERROR /home/yorch/dev/scala-fundamentals/build.sbt:68: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+2024.03.07 12:56:26 ERROR     sourceDirectories in Compile += baseDirectory.value / "src/playground",[0m
+2024.03.07 12:56:26 ERROR                       ^[0m
+2024.03.07 12:56:26 ERROR /home/yorch/dev/scala-fundamentals/build.sbt:69: warning: method in in trait ScopingSetting is deprecated (since 1.5.0): `in` is deprecated; migrate to slash syntax - https://www.scala-sbt.org/1.x/docs/Migrating-from-sbt-013x.html#slash[0m
+2024.03.07 12:56:26 ERROR     sourceDirectories in Compile += baseDirectory.value / "src/lectures/part1basics"[0m
+2024.03.07 12:56:26 ERROR                       ^[0m
+2024.03.07 12:56:27 INFO  [info] loading settings for project root from build.sbt ...[0m
+2024.03.07 12:56:27 INFO  [info] set current project to hello-world (in build file:/home/yorch/dev/scala-fundamentals/)[0m
+2024.03.07 12:56:27 INFO  [warn] there's a key that's not used by any other settings/tasks:[0m
+2024.03.07 12:56:27 INFO  [warn]  [0m
+2024.03.07 12:56:27 INFO  [warn] * root / Compile / sourceDirectories[0m
+2024.03.07 12:56:27 INFO  [warn]   +- (sbt.Defaults.sourceConfigPaths) Defaults.scala:613[0m
+2024.03.07 12:56:27 INFO  [warn]   +- /home/yorch/dev/scala-fundamentals/build.sbt:68[0m
+2024.03.07 12:56:27 INFO  [warn]   +- /home/yorch/dev/scala-fundamentals/build.sbt:69[0m
+2024.03.07 12:56:27 INFO  [warn]  [0m
+2024.03.07 12:56:27 INFO  [warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check[0m
+2024.03.07 12:56:27 INFO  [warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key[0m
+2024.03.07 12:56:27 INFO  [success] Generated .bloop/root-test.json[0m
+2024.03.07 12:56:27 INFO  [success] Generated .bloop/root.json[0m
+2024.03.07 12:56:27 INFO  [success] Total time: 0 s, completed Mar 7, 2024 12:56:27 PM[0m
+2024.03.07 12:56:28 INFO  time: ran 'sbt bloopInstall' in 6.93s[0m
+2024.03.07 12:56:28 INFO  Disconnecting from Bloop session...[0m
+2024.03.07 12:56:28 INFO  Shut down connection with build server.[0m
+2024.03.07 12:56:28 INFO  Shut down connection with build server.[0m
+2024.03.07 12:56:28 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:56:28 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:56:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:56:28 INFO  Attempting to connect to the build server...[0m
+2024.03.07 12:56:28 INFO  Bloop uses /home/yorch/.cache/coursier/arc/https/github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%252B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.22_7.tar.gz/jdk-11.0.22+7 defined at /home/yorch/.bloop/bloop.json[0m
+2024.03.07 12:56:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/yorch/dev/scala-fundamentals/project/.metals/bsp.trace.json or /home/yorch/.cache/metals/bsp.trace.json[0m
+2024.03.07 12:56:28 INFO  time: Connected to build server in 34ms[0m
+2024.03.07 12:56:28 INFO  Connected to Build server: Bloop v1.5.15[0m
+2024.03.07 12:56:29 INFO  time: indexed workspace in 1.03s[0m
+2024.03.07 12:56:29 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:56:31 INFO  time: compiled root in 2.39s[0m
+2024.03.07 12:56:31 INFO  time: code lens generation in 2.14s[0m
+2024.03.07 12:56:37 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:56:37 INFO  time: compiled root in 0.29s[0m
+Mar 07, 2024 12:57:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1749
+2024.03.07 12:57:34 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:57:34 INFO  time: compiled root in 0.34s[0m
+Mar 07, 2024 12:59:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2172
+Mar 07, 2024 12:59:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2173
+2024.03.07 12:59:46 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:59:46 INFO  time: compiled root in 0.41s[0m
+2024.03.07 12:59:51 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:59:51 INFO  time: compiled root in 0.31s[0m
+2024.03.07 12:59:54 INFO  compiling root (1 scala source)[0m
+2024.03.07 12:59:54 INFO  time: compiled root in 37ms[0m
+2024.03.07 13:00:46 INFO  compiling root (1 scala source)[0m
+2024.03.07 13:00:46 INFO  time: compiled root in 0.3s[0m
+Mar 07, 2024 1:01:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2316
+Mar 07, 2024 1:01:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2331
+2024.03.07 13:02:09 INFO  compiling root (1 scala source)[0m
+2024.03.07 13:02:09 INFO  time: compiled root in 0.33s[0m
+Mar 07, 2024 1:03:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2469
+2024.03.07 13:03:26 INFO  compiling root (1 scala source)[0m
+2024.03.07 13:03:26 INFO  time: compiled root in 0.3s[0m
+Mar 07, 2024 1:03:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2666
+2024.03.07 13:04:08 INFO  compiling root (1 scala source)[0m
+2024.03.07 13:04:08 INFO  time: compiled root in 0.3s[0m
+Mar 07, 2024 1:04:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2800
+Mar 07, 2024 1:04:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2886
+Mar 07, 2024 1:04:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2887
+Mar 07, 2024 1:04:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2888
+Mar 07, 2024 1:04:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2926
+Mar 07, 2024 1:05:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2966
+Mar 07, 2024 1:06:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3227
+Mar 07, 2024 1:06:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3303
+Mar 07, 2024 1:07:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3511
+2024.03.07 13:08:46 ERROR Failed to tokenize input for semantic tokens for /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala
+scala.meta.tokenizers.TokenizeException: <input>:26: error: Invalid literal number
+    val aLong: Long = 4613948d39L // 64-bit integer (8-bytes integer).
+                      ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:820)
+	at scala.meta.internal.tokenizers.LegacyScanner.getFraction(LegacyScanner.scala:814)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:851)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:335)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.03.07 13:08:47 ERROR Failed to tokenize input for semantic tokens for /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala
+scala.meta.tokenizers.TokenizeException: <input>:26: error: Invalid literal number
+    val aLong: Long = 4613948dddddd39L // 64-bit integer (8-bytes integer).
+                      ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:820)
+	at scala.meta.internal.tokenizers.LegacyScanner.getFraction(LegacyScanner.scala:814)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:851)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:335)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.03.07 13:08:48 ERROR Failed to tokenize input for semantic tokens for /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala
+scala.meta.tokenizers.TokenizeException: <input>:26: error: Invalid literal number
+    val aLong: Long = 4613948ddd39L // 64-bit integer (8-bytes integer).
+                      ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:820)
+	at scala.meta.internal.tokenizers.LegacyScanner.getFraction(LegacyScanner.scala:814)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:851)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:335)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 07, 2024 1:10:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4092
+Mar 07, 2024 1:10:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4097
+Mar 07, 2024 1:10:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4138
+Mar 07, 2024 1:10:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4205
+Mar 07, 2024 1:12:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4388
+2024.03.07 13:13:07 INFO  compiling root (1 scala source)[0m
+2024.03.07 13:13:07 INFO  time: compiled root in 0.34s[0m
+2024.03.07 13:14:30 ERROR Failed to tokenize input for semantic tokens for /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/ValuesVariablesTypes.scala
+scala.meta.tokenizers.TokenizeException: <input>:34: error: Invalid literal number
+    aVariable = 5r
+                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:820)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:864)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:335)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 07, 2024 2:54:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4698
+2024.03.07 14:56:51 INFO  compiling root (1 scala source)[0m
+2024.03.07 14:56:51 INFO  time: compiled root in 0.34s[0m
+2024.03.07 14:57:04 INFO  compiling root (1 scala source)[0m
+2024.03.07 14:57:04 INFO  time: compiled root in 0.34s[0m
+2024.03.07 14:57:13 INFO  compiling root (1 scala source)[0m
+2024.03.07 14:57:13 INFO  time: compiled root in 0.27s[0m
+Mar 07, 2024 2:57:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5042
+Mar 07, 2024 2:57:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5043
+Mar 07, 2024 2:57:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5083
+Mar 07, 2024 2:57:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5084
+2024.03.07 14:58:05 INFO  compiling root (1 scala source)[0m
+2024.03.07 14:58:05 INFO  time: compiled root in 0.36s[0m
+2024.03.07 14:58:10 INFO  compiling root (1 scala source)[0m
+2024.03.07 14:58:10 INFO  time: compiled root in 0.41s[0m
+Mar 07, 2024 2:58:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5177
+Mar 07, 2024 2:58:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5178
+Mar 07, 2024 2:58:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5202
+2024.03.07 14:58:45 INFO  compiling root (1 scala source)[0m
+2024.03.07 14:58:45 INFO  time: compiled root in 0.34s[0m
+Mar 07, 2024 2:59:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5396
+2024.03.07 15:00:06 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:00:06 INFO  time: compiled root in 0.33s[0m
+2024.03.07 15:00:27 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:00:27 INFO  time: compiled root in 0.34s[0m
+Mar 07, 2024 3:00:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5561
+2024.03.07 15:00:36 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:00:36 INFO  time: compiled root in 0.36s[0m
+2024.03.07 15:00:56 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:00:56 INFO  time: compiled root in 0.39s[0m
+2024.03.07 15:01:11 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:01:11 INFO  time: compiled root in 0.36s[0m
+Mar 07, 2024 3:02:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5931
+Mar 07, 2024 3:02:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5972
+Mar 07, 2024 3:03:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6047
+Mar 07, 2024 3:03:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6161
+2024.03.07 15:03:42 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:03:42 INFO  time: compiled root in 0.34s[0m
+Mar 07, 2024 3:03:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6260
+Mar 07, 2024 3:03:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6263
+2024.03.07 15:06:27 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:06:27 INFO  time: compiled root in 0.38s[0m
+2024.03.07 15:06:49 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:06:49 INFO  time: compiled root in 0.72s[0m
+2024.03.07 15:08:41 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:08:41 INFO  time: compiled root in 0.38s[0m
+2024.03.07 15:10:08 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:10:08 INFO  time: compiled root in 0.38s[0m
+Mar 07, 2024 3:11:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7485
+2024.03.07 15:11:44 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:11:44 INFO  time: compiled root in 0.35s[0m
+Mar 07, 2024 3:11:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7653
+2024.03.07 15:12:13 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:12:13 INFO  time: compiled root in 0.5s[0m
+2024.03.07 15:12:25 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:12:25 INFO  time: compiled root in 0.43s[0m
+2024.03.07 15:12:33 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:12:33 INFO  time: compiled root in 0.41s[0m
+Mar 07, 2024 3:12:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7818
+Mar 07, 2024 3:13:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7959
+Mar 07, 2024 3:14:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8109
+2024.03.07 15:14:11 ERROR Failed to tokenize input for semantic tokens for /home/yorch/dev/scala-fundamentals/src/lectures/part1basics/Expressions.scala
+scala.meta.tokenizers.TokenizeException: <input>:51: error: illegal character '\u00b4'
+        val z = y ´1
+                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:30)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.03.07 15:14:26 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:14:26 INFO  time: compiled root in 0.43s[0m
+Mar 07, 2024 3:15:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8387
+2024.03.07 15:15:21 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:15:21 INFO  time: compiled root in 0.45s[0m
+2024.03.07 15:15:30 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:15:30 INFO  time: compiled root in 0.4s[0m
+Mar 07, 2024 3:15:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8498
+Mar 07, 2024 3:15:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8526
+Mar 07, 2024 3:17:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8590
+Mar 07, 2024 3:17:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8603
+Mar 07, 2024 3:17:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8651
+Mar 07, 2024 3:17:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8741
+Mar 07, 2024 3:17:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8744
+2024.03.07 15:17:48 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:17:48 INFO  time: compiled root in 0.41s[0m
+Mar 07, 2024 3:18:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8813
+2024.03.07 15:18:06 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:18:06 INFO  time: compiled root in 0.32s[0m
+Mar 07, 2024 3:18:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8836
+Mar 07, 2024 3:27:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9057
+Mar 07, 2024 3:27:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Mar 07, 2024 3:28:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9086
+Mar 07, 2024 3:28:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9161
+Mar 07, 2024 3:28:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9292
+2024.03.07 15:30:03 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:30:03 INFO  time: compiled root in 0.42s[0m
+2024.03.07 15:30:13 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:30:13 INFO  time: compiled root in 0.43s[0m
+2024.03.07 15:31:34 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:31:34 INFO  time: compiled root in 0.38s[0m
+2024.03.07 15:32:41 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:32:41 INFO  time: compiled root in 0.38s[0m
+2024.03.07 15:33:36 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:33:36 INFO  time: compiled root in 0.24s[0m
+2024.03.07 15:33:55 INFO  compiling root (1 scala source)[0m
+2024.03.07 15:33:55 INFO  time: compiled root in 0.25s[0m

@@ -1,0 +1,43 @@
+1709835311312:Main.scala
+1709835313741:clear
+1709835315358:cls
+1709835316872:clean
+1709835344628:run
+1709835349398:clean
+1709835350301:run
+1709835884550:run ScalaPlayground
+1709835887820:run ScalaPlayground.scala
+1709835890900:sbt
+1709835894945:run
+1709835980534:clean
+1709835982716:run
+1709836043699:load ScalaPlayground.scala
+1709836091603:sbt "run-playground com.yorch.ScalaPlayground"
+1709836096469:sbt "run-playground com.ScalaPlayground"
+1709836101237:sbt "run-playground ScalaPlayground"
+1709836111885:sbt "run-main ScalaPlayground"
+1709836130194:run
+1709836241240:sbt "runMain playground.ScalaPlayground"
+1709836250159:"runMain playground.ScalaPlayground"
+1709836254030:runMain playground.ScalaPlayground
+1709836276164:runMain ScalaPlayground
+1709836322621:sbt "runMain playground.ScalaPlayground"
+1709836384457:run
+1709836389889:reload
+1709836398702:run
+1709836408595:run ScalaPlayground.scala
+1709836432556:runMain ScalaPlayground.scala
+1709836468668:sbt "runMain playground.ScalaPlayground"
+1709836473531:runMain playground.ScalaPlayground
+1709836483216:runMain ScalaPlayground
+1709836532732:sbt compile
+1709836535244:compile
+1709836536812:clear
+1709836538373:clean
+1709836555212:show comppile:classpath
+1709836563944:show compile:classpath
+1709836567230:sbt show compile:classpath
+1709836568887:clear
+1709836569646:exit
+1709836598458:run
+1709836720998:runMain playground.ScalaPlayground
