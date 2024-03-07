@@ -1,5 +1,12 @@
-.metals/
-.bloop/
-.bsp/
-.vscode/
-.metals/metals.log
+# Scala configuration files
+*.conf
+*.properties
+*.xml
+*.yml
+*.metals
+.metals
+.bsp
+.bloop
+.vscode
+.project
+.target
