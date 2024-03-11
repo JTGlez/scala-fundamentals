@@ -66,7 +66,9 @@ lazy val root = (project in file("."))
  .settings(
     // Otras configuraciones
     sourceDirectories in Compile += baseDirectory.value / "src/playground",
-    sourceDirectories in Compile += baseDirectory.value / "src/lectures/part1basics"
+    sourceDirectories in Compile += baseDirectory.value / "src/lectures/part1basics",
+   sourceDirectories in Compile += baseDirectory.value / "src/lectures/part2oop"
+
  )
 
 // To learn more about multi-project builds, head over to the official sbt

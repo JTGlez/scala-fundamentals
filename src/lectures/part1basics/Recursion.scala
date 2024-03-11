@@ -85,8 +85,10 @@ object Recursion extends App {
     */
 
     // * Exercises. Hint: accumulators must have the same desired return type
+    // TODO: Accumulators should be used to store intermedium results between calls, instead of call the function itself
 
     // 1. Concatenate a string n times.
+
     def concatTail(str: String, n: Int) = {
         @scala.annotation.tailrec
         def concatAux(str: String, n: Int, accumulator: String): String = {
@@ -111,7 +113,8 @@ object Recursion extends App {
     def isPrimeTailRecursive(n: Int): Boolean = {
         @scala.annotation.tailrec
         def isPrimeUntilAux(t: Int, accumulator: Boolean): Boolean = {
-            if (t <= 1) accumulator
+            if (n <= 1) false
+            else if (t <= 1) accumulator
             else isPrimeUntilAux(t - 1, accumulator && (n % t != 0))
         }
         isPrimeUntilAux(n / 2, true)
@@ -130,6 +133,7 @@ object Recursion extends App {
     println("Are you prime? " + isPrimeTailRecursive(997))
 
     // 3. Fibonacci function, tail recursive
+    // TODO: Thumb rule: you need as many acumulators as recursive calls you have.
 
     def fibonacciTail(n: Int): Int = {
         @scala.annotation.tailrec
@@ -140,7 +144,7 @@ object Recursion extends App {
         fibonacciAux(n, 0, 1)
     }
 
-    println("Secuencia de Fibonacci es: " + fibonacciTail(6))
+    println("Secuencia de Fibonacci es: " + fibonacciTail(8))
 
     /** fibonacciTail(6) = fibonacciAux(6, 0, 1)
       * = fibonacciAux(5, 1, 1 + 0)
