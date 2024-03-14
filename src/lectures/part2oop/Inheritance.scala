@@ -1,5 +1,5 @@
 
-object InheritanceAndTraits extends App{
+object Inheritance extends App{
 
     //* Single-class inheritance: you can only extends one class at a time
     // Superclass
@@ -39,7 +39,7 @@ object InheritanceAndTraits extends App{
         // Overloaded constructor with just a name as a parameter
         def this(name: String) = this(name, 0)
     }
-    // class Adult(name: String, age: Int, idCard: String) extends Person This won't work, because we re creating another constructor, we need to call the "super" constructor
+    // class Adult(name: String, age: Int, idCard: String) extends Person: This won't work, because we re creating another constructor, we need to call the "super" constructor
     class Adult(name: String, age: Int, idCard: String) extends Person(name) // Extending a class with parameters
 
     //* Overriding: methods, fields and properties
@@ -66,7 +66,7 @@ object InheritanceAndTraits extends App{
     println(dog.protectedEat) // Now it allows to call protectedEat as now its a public method
     println(dog.creatureType) // Now it is K9 on the property creatureType
 
-    //* Type substitution (polymorphism): every derived instance will prefer to use the overriden methods an properties defined in their subclasses
+    //* Type substitution (polymorphism): every derived instance will prefer to use the overriden methods and properties defined in their subclasses
     // Polymorphism means that the unknownAnimal could act as a dog, even when it's an Animal based on the return type
     val unknownAnimal: Animal = new Dog("K9")
     println(unknownAnimal.protectedEat) // Uses the overriden implementation of protectedEat for Dogs, if its not protected

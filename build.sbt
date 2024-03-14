@@ -65,8 +65,9 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 lazy val root = (project in file("."))
  .settings(
     // Otras configuraciones
-    sourceDirectories in Compile += baseDirectory.value / "src/playground",
-    sourceDirectories in Compile += baseDirectory.value / "src/lectures/part1basics",
+   sourceDirectories in Compile += baseDirectory.value / "src/playground",
+   sourceDirectories in Compile += baseDirectory.value / "src/exercises",
+   sourceDirectories in Compile += baseDirectory.value / "src/lectures/part1basics",
    sourceDirectories in Compile += baseDirectory.value / "src/lectures/part2oop"
 
  )
