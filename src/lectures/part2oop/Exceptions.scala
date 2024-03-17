@@ -1,3 +1,4 @@
+import scala.AnyValCompanion
 
 object Exceptions extends App{
 
@@ -28,7 +29,76 @@ object Exceptions extends App{
 
     println(potentialFail) // Unit value or Int value
 
+    //* How to define custom exceptions
+    class myException extends Exception
+    val exception = new myException
+
+    // throw exception
+
+    // 1. Crash program with an OutOfMemoryError
+    // throw new OutOfMemoryError
+    // val array = Array.ofDim(Int.MaxValue) OOM
+
+    // 2. Crash program with a SOError
+    // throw new StackOverflowError
+    // def infinite: Int = 1 + infinite
+    // val noLimit = infinite
+
+    class OverflowException extends Exception
+    class UnderflowException extends Exception
+    class MathCalculationException extends Exception
+
+    class PocketCalculator
+
+    object PocketCalculator {
+
+        // Int companion object
+        val f = Int
 
 
+        def add(x: Int, y: Int) = try {
+
+            val result = x + y
+            if (x > 0 && y > 0 && result < 0) throw new OverflowException
+            else if (x < 0 && y < 0 && result > 0) throw new UnderflowException
+            else result 
+
+        } catch {
+            case ex: OverflowException => println("Sum exceeds the max Integer size") 
+        }
+
+        def sub(x: Int, y: Int) = try {
+            
+            val result = x + y
+            if (x > 0 && y < 0 && result < 0) throw new OverflowException
+            else if (x < 0 && y > 0 && result > 0) throw new UnderflowException
+            else result 
+        } catch {
+            case ex: UnderflowException => println("Sub is minor than the minor value for Integers") 
+        }
+
+        def mul(x: Int, y: Int): Int = {
+            val result = x * y
+            if (x > 0 && y > 0 && result < 0) throw new OverflowException
+            else if (x < 0 && y < 0 && result < 0) throw new OverflowException
+            else if (x > 0 && y < 0 && result > 0) throw new UnderflowException
+            else if (x < 0 && y > 0 && result > 0) throw new UnderflowException
+            else result 
+        } 
+
+        def div(x: Int, y: Int) = try {
+            
+            if(y > 0) x / y
+            else throw new MathCalculationException
+        } catch {
+            case ex: MathCalculationException => println("Division by 0") 
+        }
+
+    }
+
+    val result = PocketCalculator.div(2, 0)
+
+    println(result)
+    println(Int.MaxValue)
 
 }

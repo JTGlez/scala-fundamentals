@@ -7,6 +7,7 @@
 
 object VariancePositions extends App {
 
+
     // We know that generics are used in classes to reuse same logic for different types, for example, when creating lists
     val list: List[Int] = List(1,2,3)
     val strlist: List[String] = List("Hello", "Scala", "!")
@@ -28,7 +29,6 @@ object VariancePositions extends App {
     val myDogs: List[Animal] = List(lassie, hachi, laika) // List of dogs which is, in fact, a list of Animals.
 
 
-
     // TODO: Case 2. If we answer no, then Dog and Animal are unrelated types and, by definition, are Invariant types [A]. 
     // Type T is invariant and it has not any relationship with another type
     class MyInvariantList[T]
@@ -36,10 +36,6 @@ object VariancePositions extends App {
     //* As MyInvariantList is invariant, a list of dogs is not considered to be, by extension, a list of Animals; like they were complete separated entities
     // val myInvariantDogs: MyInvariantList[Animal] = new MyInvariantList[Dog]
     val myAnimals: MyInvariantList[Animal] = new MyInvariantList[Animal] // The type must match both on the return type and the instance creation
-
-
-
-
 
 
 
@@ -52,8 +48,8 @@ object VariancePositions extends App {
     val myDogs2: MyContravariantList[Dog] = new MyContravariantList[Animal] // ?!
 
     //* Why contravariance exists? And how can we use it?
-
     // Imagine a vet which can heal animals. As he can heal animals, he can also heals dogs, cat, parrots,...
+
     trait Vet[-T] {
         def heal(animal: T): Boolean
     }
@@ -83,5 +79,15 @@ object VariancePositions extends App {
       * 2. La contravarianza, en cambio, se usa cuando se busca aplicar acciones sobre un tipo de dato específico tal que las instancias generales puedan actuar sobre un subtipo específico.
       * 3. Por último, la invarianza indica que los tipos de dato no guardan relación y, por tanto, las instancias creadas siempre deben ser del mismo tipo.
       */
+
+
+    def friend(xs: Seq[String]): Seq[String] = xs.filter(_.length() > 4)
+
+    def summation(n: Int, acc: Int): Int = 
+      if (n <= 0) acc
+      else summation(n - 1, n + acc)
+
+    println(summation(8, 0))
   
 }
+

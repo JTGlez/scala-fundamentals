@@ -68,7 +68,9 @@ lazy val root = (project in file("."))
    sourceDirectories in Compile += baseDirectory.value / "src/playground",
    sourceDirectories in Compile += baseDirectory.value / "src/exercises",
    sourceDirectories in Compile += baseDirectory.value / "src/lectures/part1basics",
-   sourceDirectories in Compile += baseDirectory.value / "src/lectures/part2oop"
+   sourceDirectories in Compile += baseDirectory.value / "src/lectures/part2oop",
+  sourceDirectories in Compile += baseDirectory.value / "src/lectures/part3fp"
+
 
  )
 
