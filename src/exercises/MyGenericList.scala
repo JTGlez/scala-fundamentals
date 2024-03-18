@@ -6,6 +6,9 @@ abstract class MyGenericList[+A] {
         *      added 5. override toString = a string representation of the list
         */
 
+    // 2. Transform MyPredicate and MyTransformer into function types
+
+
     def head: A
     def tail: MyGenericList[A]
     def isEmpty: Boolean
@@ -15,9 +18,10 @@ abstract class MyGenericList[+A] {
     override def toString: String =
         "[ " + printElements + " ]" // Method on AnyRef class
     
-    def map[B](transformer: MyTransformer[A, B]): MyGenericList[B]  // [1,3,3].map(n*2) = [2, 4, 6]
-    def filter(predicate: MyPredicate[A]): MyGenericList[A]  // [1,2,3,4].filter(n % 2) = [2, 4] Receives a predicate
-    def flatMap[B](transformer: MyTransformer[A, MyGenericList[B]]): MyGenericList[B] // [1,2,3].flatMap(n => [n, n+1]) => [1,2,2,3,3,4] Receives a transformer from A to MyGenericList[B]
+    // Replace myTransform and myPredicate with arrow notation
+    def map[B](transformer: A => B): MyGenericList[B]  // [1,3,3].map(n*2) = [2, 4, 6]
+    def filter(predicate: A => Boolean): MyGenericList[A]  // [1,2,3,4].filter(n % 2) = [2, 4] Receives a predicate
+    def flatMap[B](transformer: A => MyGenericList[B]): MyGenericList[B] // [1,2,3].flatMap(n => [n, n+1]) => [1,2,2,3,3,4] Receives a transformer from A to MyGenericList[B]
 
     // B supertype of A, which consumes something to concat
     def ++[B >: A](list: MyGenericList[B]): MyGenericList[B]
@@ -108,14 +112,14 @@ case class Cons[+A](h: A, t: MyGenericList[A]) extends MyGenericList[A] {
         * 
         */
 
-trait MyPredicate[-T] {
+/* trait MyPredicate[-T] { // T => Boolean
     def test(element: T): Boolean
 }
 
 
-trait MyTransformer[-A, B] {
+trait MyTransformer[-A, B] { // A => B
     def transform(element: A): B
-}
+} */
 
 class EvenPredicate extends MyPredicate[Int] {
 
@@ -133,6 +137,11 @@ object ListTest2 extends App {
 
     println(list.toString)
     println(list2.toString)
+
+    val myTransformer = new Function1[Int, Int] {
+        override def apply(v1: Int): Int = v1
+    }
+
 
     println(list.map(new MyTransformer[Int, Int] {
         override def transform(element: Int): Int = element * 2
