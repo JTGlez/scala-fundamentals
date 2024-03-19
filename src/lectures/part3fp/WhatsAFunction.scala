@@ -1,5 +1,7 @@
 package lectures.part3fp
 
+import java.util.function
+
 object WhatsAFunction extends App {
 
     //* FP: Use Functions as first class elements, like sending them as arguments, returned or being assigned to a variable
@@ -42,11 +44,24 @@ object WhatsAFunction extends App {
 
     // 2. Transform MyPredicate and MyTransformer into function types
 
+    // 3. Define a function which takes an int and returns another function which takes an int and returns an int
+
+    //* Closure: v1 is visible inside v2.
+    val superAdder: Int => (Int => Int) = new Function1[Int, Function1[Int, Int]]{
+        override def apply(v1: Int): Int => Int = new Function1[Int, Int]{
+
+          override def apply(v2: Int): Int = v1 + v2
+
+        } 
+
+    }
+
+    // Returns 7
+    val adder3 = superAdder(3) // adder3 is actually a function
+    println(adder3(4))
+
+    //* Currying technique: they can be called with multiple parameters
+    println(superAdder(3)(4))
 
 
-
-
-
-    
-  
 }
